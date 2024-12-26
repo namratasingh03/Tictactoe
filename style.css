@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #c0c0c0;
+  text-align: center;
+}
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  box-shadow: 0 0 8rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  padding: 16px 31px;
+  overflow: hidden;
+  font-size: 8vmin;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 203, 203);
+}
+.box:hover {
+  background-color: rgb(255, 203, 203);
+  padding: 10px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #a3c0a5, 0 0 40px #fffb05, 0 0 80px #adb4ae;
+}
+#Reset {
+  background-color: #adb4ae;
+  color: black;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: medium;
+}
+#Reset:hover {
+  background-color: #999999;
+  padding: 5px 10px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #3b3d3b, 0 0 40px #919691, 0 0 80px #adb4ae;
+}
+#new-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  min-width: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 590px;
+}
+
+#new-btn:hover {
+  background-color: #0056b3;
+}
+#msg {
+  color: black;
+  background-color: #95dce6;
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font: 1.45em sans-serif;
+  margin-top: 2px;
+  flex-direction: row;
+  padding: 16px 31px;
+}
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hide {
+  display: none;
+}
